@@ -1,0 +1,187 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width:100%;
+  height: 50px;
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+
+.confirm-box {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  /* background-color: #f37736; */
+  width: 230px;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  border-radius: 0.3rem;
+  padding: 1rem;
+  z-index: 5; /* Higher than the z-index of the background */
+}
+
+.confirm-bg {
+  position: fixed;
+  display: none;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #202020;
+  opacity: 0.55;
+  overflow: hidden; /* disable scrolling*/
+  z-index: 2; /* higher than all other items, but lower than 
+    the confirm box*/
+}
+
+.confirmation-text {
+  display: flex;
+  color: white;
+  margin: 0.5rem 0 2rem;
+  text-align: center;
+  line-height: 2rem;
+  font-size: 1.1rem;
+}
+
+.button-container {
+  display: flex;
+  margin-top: auto;
+  justify-content: space-between;
+}
+
+.confirmation-button, delete-button {
+  display: inline-flex;
+  background-color: #cc0000;
+  color: white;
+  padding: 0.7rem 1.4rem;
+  border: none;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+}
+
+.cancel-button {
+  background-color: #999999;
+}
+
+.confirmation-button:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+.cancel-button:hover {
+  background-color: #b2b2b2;
+  cursor: pointer;
+}
+
+.info-user {
+  display: flex;
+}
+
+.info-user.title {
+  margin-right: 88%;
+}
+
+.info-user.rest {
+  margin-left: 90%;
+  position: fixed;
+}
+
+.info-user.rest.logout {
+  margin-left: 2.5%;
+}
+
+.view-user-picture {
+  width: 20%;
+  height: 20%;
+}
+
+.first-component {
+  flex-grow: 2;
+}
+
+.second-component {
+  flex-grow: 1;
+}
+
+.footer-text {
+  color: white;
+}
+
+.view-profile-space {
+  margin-right: 2.32rem;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; /* Opcional para que el contenedor ocupe toda la altura de la ventana */
+}
+
+.admin-button {
+  margin: 7rem;
+}
+
+.image-with-text {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.image-with-text img {
+  max-width: 100%;
+}
+
+.image-with-text .text {
+  flex: 1;
+}
+
+.see-records-button {
+  margin-left: 12rem;
+}
+
+.add-record-button {
+  margin-right: 44.3rem;
+}
